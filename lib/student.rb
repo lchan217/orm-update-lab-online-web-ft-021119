@@ -44,4 +44,6 @@ class Student
    new_student.save
    new_student
  end 
+ def new_from_database
+ end 
 end
