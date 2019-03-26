@@ -28,7 +28,7 @@ class Student
       self.update
     else 
       sql = <<-SQL
-        INSERT (name, grade)
+        INSERT INTO students
         VALUES (?,?)
       SQL
     end
