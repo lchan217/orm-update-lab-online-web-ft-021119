@@ -1,5 +1,5 @@
 require_relative "../config/environment.rb"
-
+require 'pry'
 class Student
   attr_accessor :name, :grade, :id
   def initialize(name, grade, id=nil)
@@ -44,11 +44,12 @@ class Student
    new_student.save
    new_student
  end 
-# def self.new_from_db(row)
-#   new_student = self.new
-#   new_student.id = row[0]
-#   new_student.name = row[1]
-#   new_student.grade = row[2] 
-#   new_student
-# end 
+def self.new_from_db(row)
+  binding.pry
+  new_student = self.new
+  new_student.id = row[0]
+  new_student.name = row[1]
+  new_student.grade = row[2] 
+  new_student
+end 
 end
