@@ -59,6 +59,5 @@ class Student
       find_by_name(row)
     end 
   end
-  end
 
 end
