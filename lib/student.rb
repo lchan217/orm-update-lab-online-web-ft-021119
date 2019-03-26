@@ -44,7 +44,7 @@ class Student
    new_student.save
    new_student
  end 
-def self.new_from_db(row)
+def self.new_from_db(row) #[1, "Pat", 12]
   binding.pry
   new_student = self.new
   new_student.id = row[0]
