@@ -27,6 +27,11 @@ class Student
     if self.id 
       self.update
     else 
+      sql = <<-SQL
+        INSERT (name, grade)
+        VALUES (?,?)
+      SQL
+    end
   end 
   def update
   end 
